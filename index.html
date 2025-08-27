@@ -28,7 +28,7 @@
             </div>
 
             <div class=" flex justify-between">
-                <div class="flex items-center gap-1 mx-5 px-6 py-3 rounded-2xl bg-[#edfef0] font-bold"><span>0</span> <img class="mt-1 w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                <div class="flex items-center gap-1 mx-5 px-6 py-3 rounded-2xl bg-[#edfef0] font-bold"><span id="heart">0</span> <img class="mt-1 w-[20px] h-[20px]" src="./assets/heart.png" alt="">
                 </div>
 
                 <div class="flex items-center gap-1 mx-5 px-6 py-3 rounded-2xl bg-[#edfef0] font-bold"><span id="coin">100</span> <img class="mt-1 w-[20px] h-[20px]" src="./assets/coin.png" alt="">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
 
-                    <div><i class="fa-solid fa-heart"></i></div>
+                    <div><i id="fa-heart" class="fa-solid fa-heart"></i></div>
                 </div>
 
 
@@ -258,11 +258,14 @@
 
                 <div>
                     
-                <div class="flex mt-2 justify-between">
-                    <i class="fa-solid fa-clock mt-1 mx-1"></i>
-                    <h1>Call History</h1>
+                <div class="flex mt-2 justify-between p-4 items-center">
+                   
+                    <div class="flex "> 
+                        <i class="fa-solid fa-clock mt-[7px] mx-1"></i>
+                        <h1>Call History</h1>
+                    </div>
 
-                    <button class="btn bg-[#29A74A] text-white rounded-2xl">Clear</button>
+                    <button id="clear" class="btn bg-[#29A74A] text-white rounded-2xl">Clear</button>
         
                 </div>
 
@@ -298,93 +301,8 @@
 
    <!--  -->
 
-   <script>
+   <script src="./index.js">
 
-
-   
-    document.getElementById("call").addEventListener("click",function(e){
-
-       const coin = document.getElementById("coin")
-    const convertCoin = parseInt(coin.innerText)
-    
-    const countCoin = convertCoin-20
-
-    //    condition
-        if(countCoin>=0){
-        coin.innerText = countCoin;
-
-        
-
-        const test = e.target.parentNode.parentNode;
-
-
-
-        const addedSection = document.getElementById("added-section")
-        
-        const valu1 = test.querySelectorAll("#valu1")[0].innerText;
-        const valu2 = test.querySelectorAll("#valu1")[1].innerText;
-
-
-                //alert box 
-                
-            alert(`Calling ${valu1} ${valu2}`)
-
-         
-
-
-
-
-                // get time 
-
-
-        const now = new Date();
-const hours = now.getHours();
-const minutes = now.getMinutes();
-const seconds = now.getSeconds();
-
-
-
-
-        // creating histories div
-
-        const div = document.createElement("div")
-
-        div.innerHTML = `<div class="bg-[#fdf7f7] w-[95%] mx-auto p-3 rounded-xl mt-3 flex justify-between items-center">
-                        <div class="w-[60%]">
-                            <h1 class="font-bold">${valu1}</h1>
-                            <h1>${valu2}</h1>
-                        </div>
-
-                        <h1>${hours}:${minutes}:${seconds} AM</h1>
-
-                    </div>`
-       
-
-
-
-
-
-// add to section part
-
- addedSection.appendChild(div)
-        
-        
-
-
-// end
-            
-        }
-
-        else{
-            alert("You Dont have sufficient coint")
-        }
-
-
-        // coin part
-
-        
-        
-    })
    </script>
 </body>
 </html>
