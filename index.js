@@ -106,13 +106,13 @@ const seconds = now.getSeconds();
 
         const div = document.createElement("div")
 
-        div.innerHTML = `<div class="bg-[#fdf7f7] w-[95%] mx-auto p-3 rounded-xl mt-3 flex justify-between items-center">
-                        <div class="w-[60%]">
+        div.innerHTML = `<div class="bg-[#fdf7f7] w-[95%] mx-auto p-3 rounded-xl mt-3 flex md:justify-between max-sm:flex-col items-center">
+                        <div class="md:w-[60%]">
                             <h1 class="font-bold">${valu1}</h1>
                             <h1>${valu2}</h1>
                         </div>
 
-                        <h1>${hours}:${minutes}:${seconds} AM</h1>
+                        <h1 class="max-sm:mt-5">${hours}:${minutes}:${seconds} AM</h1>
 
                     </div>`
        
