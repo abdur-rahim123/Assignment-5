@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  cdn links -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- font awsome links -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    
+   <div class="w-full  bg-[#f5fff6] ">
+    
+        <!-- nav section -->
+         <nav class="bg-white w-full h-[60px] flex justify-between items-center p-10">
+            <div class="flex items-center">
+                <img src="./assets/logo.png" alt="" class="h-[50px] w-[50px]">
+                <h1 class="text-[#006747] font-extrabold text-lg ml-2">Emergency <br>
+                <span class="block -mt-2">Services</span>
+                </h1>
+            </div>
+
+            <div class=" flex justify-between">
+                <div class="flex items-center gap-1 mx-5 px-6 py-3 rounded-2xl bg-[#edfef0] font-bold"><span>0</span> <img class="mt-1 w-[20px] h-[20px]" src="./assets/heart.png" alt="">
+                </div>
+
+                <div class="flex items-center gap-1 mx-5 px-6 py-3 rounded-2xl bg-[#edfef0] font-bold"><span>100</span> <img class="mt-1 w-[20px] h-[20px]" src="./assets/coin.png" alt="">
+                </div>
+
+                <button class="bg-[#4bbd62] text-white px-6 rounded-2xl">2 Copy</button>
+            </div>
+
+         </nav>
+
+         <!-- banner -->
+        <section class="h-[245px] bg-gradient-to-r from-[#006747] to-[#013223]  text-white text-center p-5">
+
+            <img src="./assets/logo.png" alt="" class="w-[100px] h-[100px] mx-auto">
+        
+            <h1 class="text-2xl font-bold">Emergency Service Directory</h1>
+            <p class="mt-5">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+               
+        
+        </section>
+
+        <!-- boxes and history section -->
+
+        <section class="grid grid-cols-12 my-10 w-[95%] mx-auto gap-5 h-[640px]">
+
+            <!-- box-section -->
+            <div id="call" class="col-span-9  h-20 grid grid-cols-3 gap-5 ">
+
+                <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">National Emergency Number</h1>
+                        <h1>National Emergency</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >999</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">All</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+
+
+                <!-- box-2 -->
+                <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">Police Helpline Number</h1>
+                        <h1>Police</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >999</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">Police</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+
+
+                <!-- three -->
+                
+    <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">Fire Service Number</h1>
+                        <h1>Fire service</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >999</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">Fire</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+
+
+
+                <!-- 4 -->
+
+                         <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">Ambulance Number</h1>
+                        <h1>Ambulance</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >1994-999999</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">Health</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+   
+
+
+                <!-- 5 -->
+                 <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">Women & Chile Helpline</h1>
+                        <h1>Women & child Helpline</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >109</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">Help</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+
+
+                <!-- 6 -->
+                <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">Anti-Corruption Helpline</h1>
+                        <h1>Anti-Corruption</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >106</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">All</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+
+                <!-- 7 -->
+
+                <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">National Emergency Number</h1>
+                        <h1>National Emergency</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >9990</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">All</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+
+                <!-- 8 -->
+
+                <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">National Emergency Number</h1>
+                        <h1>National Emergency</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >9990</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">All</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+
+                <!-- 9 -->
+                 <div class="bg-white shadow rounded-md p-5 flex justify-between">
+                    <div>
+                        <img src="assets/emergency.png" alt="" class="bg-red-200 p-2
+                        mb-3 rounded-lg h-[50px] w-[50px]">
+                        <h1 id="valu1"  class="font-bold ">National Emergency Number</h1>
+                        <h1>National Emergency</h1>
+                        <h1 id="valu1" class="font-bold mt-5" >9990</h1>
+
+                        <button class="bg-[#f3f2f2] px-4 py-2 mb-3 rounded-3xl">All</button>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn rounded-xl"><i class="fa-solid fa-copy"></i>Copy</button>
+                            <button id="" class="btn rounded-xl bg-[#00a63e] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <div><i class="fa-solid fa-heart"></i></div>
+                </div>
+
+
+                <!-- end -->
+            </div>
+
+
+            
+            <!-- history section -->
+            <div class="col-span-3 bg-white shadow-lg h-[full] ">
+
+                <div>
+                    
+                <div class="flex mt-2 justify-between">
+                    <i class="fa-solid fa-clock mt-1 mx-1"></i>
+                    <h1>Call History</h1>
+
+                    <button class="btn bg-[#29A74A] text-white rounded-2xl">Clear</button>
+        
+                </div>
+
+                
+
+                </div>
+
+                <!-- items sectin -->
+                <div id="added-section">
+                   
+                    <!-- <div class="bg-[#fdf7f7] w-[95%] mx-auto p-3 rounded-xl mt-3 flex justify-between items-center">
+                        <div class="w-[65%] ">
+                            <h1 class="font-bold ">National Emergency Number</h1>
+                            <h1 class="text-gray-600">999</h1>
+                        </div>
+
+                        <h1 class="">8:01:23 AM</h1>
+
+                    </div> -->
+
+
+                    
+                    
+                </div>
+
+            </div>
+
+
+        </section>
+
+   </div>
+  
+
+   <!--  -->
+
+   <script>
+
+
+   
+    document.getElementById("call").addEventListener("click",function(e){
+
+        
+        const test = e.target.parentNode.parentNode;
+
+        // console.log(test.querySelectorAll("#valu1")[1])
+
+    
+
+
+        
+        // console.log(el.querySelectorAll("#valu1")[1].innerText)
+
+
+        const addedSection = document.getElementById("added-section")
+        
+        const valu1 = test.querySelectorAll("#valu1")[0].innerText;
+        const valu2 = test.querySelectorAll("#valu1")[1].innerText;
+
+        console.log(valu1,valu2)
+
+                // get time 
+
+
+        const now = new Date();
+const hours = now.getHours();
+const minutes = now.getMinutes();
+const seconds = now.getSeconds();
+
+
+
+
+        // creating 
+
+        const div = document.createElement("div")
+
+        div.innerHTML = `<div class="bg-[#fdf7f7] w-[95%] mx-auto p-3 rounded-xl mt-3 flex justify-between items-center">
+                        <div class="w-[60%]">
+                            <h1 class="font-bold">${valu1}</h1>
+                            <h1>${valu2}</h1>
+                        </div>
+
+                        <h1>${hours}:${minutes}:${seconds} AM</h1>
+
+                    </div>`
+       
+
+
+
+
+
+// add to section part
+
+ addedSection.appendChild(div)
+        
+        
+
+        
+        
+    })
+   </script>
+</body>
+</html>
