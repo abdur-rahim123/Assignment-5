@@ -31,7 +31,7 @@
                 <div class="flex items-center gap-1 mx-5 px-6 py-3 rounded-2xl bg-[#edfef0] font-bold"><span>0</span> <img class="mt-1 w-[20px] h-[20px]" src="./assets/heart.png" alt="">
                 </div>
 
-                <div class="flex items-center gap-1 mx-5 px-6 py-3 rounded-2xl bg-[#edfef0] font-bold"><span>100</span> <img class="mt-1 w-[20px] h-[20px]" src="./assets/coin.png" alt="">
+                <div class="flex items-center gap-1 mx-5 px-6 py-3 rounded-2xl bg-[#edfef0] font-bold"><span id="coin">100</span> <img class="mt-1 w-[20px] h-[20px]" src="./assets/coin.png" alt="">
                 </div>
 
                 <button class="bg-[#4bbd62] text-white px-6 rounded-2xl">2 Copy</button>
@@ -304,17 +304,19 @@
    
     document.getElementById("call").addEventListener("click",function(e){
 
-       
+       const coin = document.getElementById("coin")
+    const convertCoin = parseInt(coin.innerText)
+    
+    const countCoin = convertCoin-20
+
+    //    condition
+        if(countCoin>=0){
+        coin.innerText = countCoin;
+
+        
 
         const test = e.target.parentNode.parentNode;
 
-        // console.log(test.querySelectorAll("#valu1")[1])
-
-    
-
-
-        
-        // console.log(el.querySelectorAll("#valu1")[1].innerText)
 
 
         const addedSection = document.getElementById("added-section")
@@ -322,11 +324,15 @@
         const valu1 = test.querySelectorAll("#valu1")[0].innerText;
         const valu2 = test.querySelectorAll("#valu1")[1].innerText;
 
-        // alert box
 
-         alert(`Calling ${valu1} ${valu2}`)
+                //alert box 
+                
+            alert(`Calling ${valu1} ${valu2}`)
 
-        console.log(valu1,valu2)
+         
+
+
+
 
                 // get time 
 
@@ -363,6 +369,18 @@ const seconds = now.getSeconds();
  addedSection.appendChild(div)
         
         
+
+
+// end
+            
+        }
+
+        else{
+            alert("You Dont have sufficient coint")
+        }
+
+
+        // coin part
 
         
         
