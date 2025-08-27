@@ -16,6 +16,25 @@ document.getElementById("clear").addEventListener("click",function(){
 document.getElementById("call").addEventListener("click",function(e){
 
 
+    // copied condition
+    if(e.target.innerText =="Copy"){
+        
+
+        const copy = document.getElementById("copy")
+        
+        const convertCopy = parseInt(copy.innerText)
+
+        copy.innerText = convertCopy+1;
+
+        const storeNum = e.target.parentNode.parentNode.querySelectorAll("#valu1")[1].innerText;
+
+        navigator.clipboard.writeText(storeNum)
+
+        alert(`Number copied ${storeNum}`)
+
+    }
+    
+
     
     // heart  count
         const heart = document.getElementById("heart")
@@ -57,6 +76,10 @@ document.getElementById("call").addEventListener("click",function(e){
         
         const valu1 = test.querySelectorAll("#valu1")[0].innerText;
         const valu2 = test.querySelectorAll("#valu1")[1].innerText;
+
+
+
+    
 
 
                 //alert box 
