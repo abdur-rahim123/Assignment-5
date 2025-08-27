@@ -304,7 +304,7 @@
    
     document.getElementById("call").addEventListener("click",function(e){
 
-        alert("are you sure")
+       
 
         const test = e.target.parentNode.parentNode;
 
@@ -322,6 +322,10 @@
         const valu1 = test.querySelectorAll("#valu1")[0].innerText;
         const valu2 = test.querySelectorAll("#valu1")[1].innerText;
 
+        // alert box
+
+         alert(`Calling ${valu1} ${valu2}`)
+
         console.log(valu1,valu2)
 
                 // get time 
@@ -335,7 +339,7 @@ const seconds = now.getSeconds();
 
 
 
-        // creating 
+        // creating histories div
 
         const div = document.createElement("div")
 
