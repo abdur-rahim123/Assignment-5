@@ -106,7 +106,7 @@ const seconds = now.getSeconds();
 
         const div = document.createElement("div")
 
-        div.innerHTML = `<div class="bg-[#fdf7f7] w-[95%] mx-auto p-3 rounded-xl mt-3 flex md:justify-between max-sm:flex-col items-center">
+        div.innerHTML = `<div class="bg-[#f5fff6] w-[95%] mx-auto p-3 rounded-xl mt-3 flex md:justify-between max-sm:flex-col items-center">
                         <div class="md:w-[60%]">
                             <h1 class="font-bold">${valu1}</h1>
                             <h1>${valu2}</h1>
